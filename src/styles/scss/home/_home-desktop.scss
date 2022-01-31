@@ -1,0 +1,15 @@
+.main-home {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 80px;
+}
+.home-img {
+  grid-column: 2 / 3;
+}
+.home-img img {
+  width: 95%;
+}
+.home-text h1 {
+  text-align: start;
+  font-size: 5.5rem;
+}

@@ -1,0 +1,36 @@
+.main-biography {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.main-biography .my-info {
+  padding: 0 10%;
+}
+.my-info h1 {
+  margin-bottom: 20px;
+}
+.my-info h1, .stack h1 {
+  font-size: 5rem;
+}
+.my-info p, .stack p {
+  font-size: 2.1rem;
+}
+.my-info p {
+  text-align: start;
+}
+.stack-tech li img, .social-media li img {
+  width: 40px;
+  height: 40px;
+}
+.stack-tech li p {
+  font-size: 1.6rem;
+}
+.contact {
+  margin-top: 30px;
+}
+.contact h1 {
+  font-size: 2.4rem;
+}
+.made-love {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,67 @@
+.main-biography {
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  animation-name: home-entry;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.my-info h1, .stack h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.my-info p, .stack p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+.stack {
+  text-align: start;
+}
+.stack-tech, .social-media {
+  list-style: none;
+}
+.stack-tech li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.stack-tech li img, .social-media li img {
+  width: 35px;
+  height: 35px;
+}
+.stack-tech li p {
+  font-size: 1.4rem;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.contact {
+  margin-top: 20px;
+}
+.contact h1 {
+  font-size: 2.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.social-media li {
+  margin-left: 10px;
+}
+.made-love {
+  text-align: center;
+}
+.made-love p {
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+.made-love p img {
+  width: 18px;
+  margin-left: 2px;
+}

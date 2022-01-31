@@ -1,0 +1,14 @@
+@import './resets.scss';
+
+// libs
+@import './scss/base/_colors';
+
+// components
+@import './scss/header/header.scss';
+@import './scss/home/home.scss';
+@import './scss/biography/biography.scss';
+@import './scss/articles/articles.scss';
+
+@media (min-width: 1024px) {
+  @import './app-desktop';
+}
