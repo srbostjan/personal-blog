@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -48,4 +49,4 @@ module.exports = {
       filename: '[name].css',
     })
   ],
-}
+};

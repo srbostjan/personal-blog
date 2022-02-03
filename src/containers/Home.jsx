@@ -1,40 +1,24 @@
-import Markdown from 'markdown-to-jsx';
-import React, { useState, useEffect } from 'react';
-import {getArticles} from '../server/firebase';
+import React from 'react';
+import HomeCard from '../components/home/HomeCard';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const [post, setPost] = useState('');
-
-  useEffect(() => {
-    async function fetchData() {
-      let article = await getArticles();
-      setPost(article[0].content);
-      console.log(article[0].content);
-    }
-    fetchData();
-  });
   return (
     <div className="main-home">
-      <section className="home-text">
-        <h1>Hi, I'm Sebastian Rivera</h1>
-        <p>Frontend Developer</p>
-        <p>Platzi Master C7 Student</p>
-        <p className="last">Quick learner</p>
-        <a
-          href="https://drive.google.com/uc?id=1DVXwmeg5-XJ9I7CF0pP3zlObZklh5FXW&export=download"
-          download="CV_Sebastian_Rivera"
-          >Download CV
-        </a>
-        <Markdown>
-          {post}
-        </Markdown>
+      <section className="home-left">
+        <div className="content">
+          <h1>Frontend Developer</h1>
+          <p>UI:UX enthusiasth</p>
+          <p>Clean code</p>
+          <button><Link to='/articles'>Download CV</Link></button>
+        </div>
       </section>
-      <figure className="home-img">
-        <img
-          src="https://i.ibb.co/SrpVG7Y/foto-yo.jpg"
-          alt="foto perfil Sebastian Rivera"
-        />
-      </figure>
+      <section className="home-right">
+      <HomeCard name="Biography" />
+      <HomeCard name="Articles" />
+      <HomeCard name="Twitter" />
+      <HomeCard name="Github" />
+      </section>
     </div>
   );
 };
