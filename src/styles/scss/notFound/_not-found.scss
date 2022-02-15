@@ -1,0 +1,19 @@
+.not-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 5rem;
+  background: $ppal-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+.not-found p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
