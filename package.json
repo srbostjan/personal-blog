@@ -18,6 +18,7 @@
     "personal",
     "eslint"
   ],
+  "homepage": "https://srbostjan.github.io/personal-blog/",
   "author": "srbostjan",
   "license": "MIT",
   "devDependencies": {
