@@ -4,10 +4,16 @@
 @import './scss/base/_colors';
 
 // components
-@import './scss/header/header.scss';
+@import './scss/header/_header-mobile';
+@import './scss/components/nav-desktop';
+@import './scss/components/article-card';
+@import './scss/components/loader';
+
+// Containers
 @import './scss/home/home.scss';
 @import './scss/biography/biography.scss';
 @import './scss/articles/articles.scss';
+@import './scss/viewArticle/view-article.scss';
 
 @media (min-width: 1024px) {
   @import './app-desktop';

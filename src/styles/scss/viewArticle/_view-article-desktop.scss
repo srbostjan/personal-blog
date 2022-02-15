@@ -1,15 +1,23 @@
-.main-biography {
+.main-article {
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 0vh;
-  margin: 0;
 }
-.main-biography__content {
+.article__content {
   padding: 0 50px;
   padding-right: 70px;
 }
-.biography-header {
+.article__content--content {
+  padding-right: 30%;
+}
+.article__content ul {
+  margin-left: 15px;
+}
+.article-header {
   display: flex;
   justify-content: space-between;
   margin: 50px 0px 30px 0;
+}
+@media (min-width: 1280px) {
+
 }

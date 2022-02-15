@@ -1,3 +1,8 @@
+@import '../components/home-card-desktop';
+
+::-webkit-scrollbar {
+  display: none;
+}
 .main-home {
   display: grid;
   grid-template-rows: 1fr;
@@ -5,21 +10,32 @@
   width: 100vw;
   max-height: 100vh;
 }
-.home-left .content h1 {
-  font-size: 5rem;
+.home-left {
+  height: 100vh;
+  animation: initAnimation 1s ease-in-out;
 }
-.home-left .content p {
-  font-size: 4rem;
+.home-left .content {
+  margin-left: 40px;
+  text-align: start;
+}
+.home-left .content h1 {
+  margin: 0;
+  animation: typing 2.5s steps(18), blink infinite step-end alternate;
 }
 .home-left .content button {
-  width: 180px;
-  height: 50px;
+  position: relative;
+  width: 130px;
+  height: 40px;
 }
 .home-left .content button a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .home-left .content button:hover {
+  transform: translate(3px, -3px);
   box-shadow: 0px -3px 10px rgba(158, 0, 255, 0.6), 0px 3px 10px rgba(0, 192, 192, 0.6);
+}
+.home-right {
+  height: 100vh;
 }
 .home-right .home-card:first-child, .home-right .home-card:nth-child(2) {
   border-top: none;
@@ -31,6 +47,22 @@
   width: 100%;
   height: 100%;
 }
-::-webkit-scrollbar {
+.down-arrow {
   display: none;
+}
+
+@media (min-width:1440px) {
+  .home-left .content h1 {
+    font-size: 6rem;
+  }
+  .home-left .content p {
+    font-size: 4rem;
+  }
+  .home-left .content button {
+    width: 250px;
+    height: 64px;
+  }
+  .home-left .content button a {
+    font-size: 1.8rem;
+  }
 }

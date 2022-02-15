@@ -1,0 +1,41 @@
+
+.home-card {
+  position: relative;
+  max-height: 30vh;
+  border: 0.3px solid rgb(73, 73, 73);
+  overflow: hidden;
+  transition: top 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+.home-card .circle-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  background-color: $gray;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.home-card:first-child, .home-card:nth-child(2) {
+  border-bottom: none;
+}
+.home-card:first-child, .home-card:nth-child(3) {
+  border-right: none;
+}
+.home-card p {
+  position: absolute;
+  font-size: 1.6rem;
+  color: $subdued-white-text;
+  font-weight: 200;
+  bottom: 20px;
+  left: 10px;
+  transition: all 0.3s;
+}
+.home-card p i {
+  margin-left: 10px;
+  font-size: 1.6rem;
+  color: $subdued-white-text;
+  transition: all 0.3s;
+}

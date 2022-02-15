@@ -1,0 +1,38 @@
+.main-article {
+  padding: 0 15px;
+}
+.article__content {
+  margin-top: 30px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.article--title {
+  font-size: 3rem;
+  letter-spacing: -.025em;
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.article__content p, .article__content li {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  text-align: start;
+  margin-bottom: 10px;
+}
+.article__content h2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.article__content ul {
+  margin-bottom: 20px;
+}
+.article__content img {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}

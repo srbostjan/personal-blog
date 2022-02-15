@@ -1,0 +1,27 @@
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .nav-desktop {
+    display: inline-flex;
+    list-style: none;
+  }
+  .nav-desktop li {
+    margin: 0 6px;
+  }
+  .nav-desktop li a {
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-desktop li a:hover {
+    text-decoration: underline;
+  }
+}
+@media (min-width:1280px) {
+  .nav-desktop li a {
+    font-size: 1.8rem;
+  }
+}
