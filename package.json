@@ -8,7 +8,9 @@
     "build": "webpack --mode production",
     "linter": "./node_modules/.bin/eslint --init",
     "lint": "eslint --ext .js,.jsx src",
-    "pre-commit": "npm run lint"
+    "pre-commit": "npm run lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
@@ -29,6 +31,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "5.5.0",
     "mini-css-extract-plugin": "2.4.4",
