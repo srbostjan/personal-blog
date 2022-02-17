@@ -23,6 +23,10 @@
 }
 
 @media (min-width:1440px) {
+  .article  img {
+    width: 70px;
+    height: 70px;
+  }
   .home-card p {
     font-size: 2rem;
   }

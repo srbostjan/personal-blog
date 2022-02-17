@@ -1,7 +1,7 @@
 .main-biography {
   display: grid;
   grid-template-columns: 100px 1fr;
-  padding: 0vh;
+  padding: 0vh; 
   margin: 0;
 }
 .main-biography__content {
@@ -12,4 +12,36 @@
   display: flex;
   justify-content: space-between;
   margin: 50px 0px 30px 0;
+}
+.my-info {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 20px;
+}
+.my-info--presentation {
+  margin: 0;
+}
+.my-info--presentation img {
+  height: 70vh;
+}
+.biography--titles {
+  display: none;
+}
+.biography--titles:nth-child(1) {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.biography--titles:nth-child(1) h3 {
+  max-width: 7.5ch;
+}
+.biography--titles:nth-child(1) h3, .resume, .stack {
+  max-width: 400px;
+}
+.my-info__content > div h2 {
+  font-weight: 300;
+}
+.my-info__content h2, .my-info__content p {
+  text-align: start;
 }
