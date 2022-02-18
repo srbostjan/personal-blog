@@ -32,6 +32,7 @@
 }
 .biography--titles:nth-child(1) {
   display: none;
+  animation: biography-content-entry3 1s ease-out;
 }
 .biography--titles h3 {
   position: relative;
@@ -39,6 +40,7 @@
   font-size: 4.4rem;
   font-family: 'Dancing Script', cursive;
   font-weight: 400;
+  background-clip: border-box;
   background: $ppal-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,4 +71,46 @@
 }
 .my-info__content p {
   text-align: center;
+}
+.stack {
+  animation: biography-content-entry .33s ease-out;
+}
+.resume {
+  animation: biography-content-entry2 .66s ease-out;
+}
+@keyframes biography-content-entry {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes biography-content-entry2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes biography-content-entry3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

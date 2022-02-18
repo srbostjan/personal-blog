@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderMobile from '../components/Header/HeaderMobile';
 import NavDesktop from '../components/Header/NavDesktop';
 import DownArrow from '../components/DownArrow';
 
 const Biography = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="main-biography">
-      <HeaderMobile name='Biography'/>
+      <HeaderMobile nav='biography' name='Biography'/>
       <div className='main-biography__content'>
         <div className='biography-header'>
           <div></div>
-          <NavDesktop />
+          <NavDesktop nav='biography'/>
         </div>
         <section className='my-info'>
           <div className='my-info--presentation'>

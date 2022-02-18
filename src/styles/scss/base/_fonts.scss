@@ -1,0 +1,18 @@
+.text {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.active a {
+  position: relative;
+  background: $ppal-gradient;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  font-weight: 400;
+  cursor: default;
+}

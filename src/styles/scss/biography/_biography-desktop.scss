@@ -18,6 +18,15 @@
   grid-template-columns: 1fr 1.5fr;
   grid-gap: 20px;
 }
+.my-info__content > div{
+  margin-bottom: 0px;
+}
+.my-info__content > div h2 {
+  font-weight: 300;
+}
+.my-info__content h2, .my-info__content p {
+  text-align: start;
+}
 .my-info--presentation {
   margin: 0;
 }
@@ -34,14 +43,8 @@
   margin-bottom: 0;
 }
 .biography--titles:nth-child(1) h3 {
-  max-width: 7.5ch;
+  max-width: 7.3ch;
 }
-.biography--titles:nth-child(1) h3, .resume, .stack {
+.resume, .stack {
   max-width: 400px;
-}
-.my-info__content > div h2 {
-  font-weight: 300;
-}
-.my-info__content h2, .my-info__content p {
-  text-align: start;
 }

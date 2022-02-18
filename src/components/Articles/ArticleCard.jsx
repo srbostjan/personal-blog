@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const ArticleCard = ({article}) => {
   return (
     <Link to={`/articles/${article.id}`} className='article' key={article.id}>
+      <figure>
         <img src={article.portrait} alt={article.alt} />
+      </figure>
       <div className="article--text">
         <h2 className='article-title'>{article.title}</h2>
         <p className='article-content'>{article.resume}</p>

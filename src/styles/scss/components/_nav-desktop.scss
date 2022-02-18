@@ -1,7 +1,6 @@
 .nav-desktop {
   display: none;
 }
-
 @media (min-width:1024px) {
   .nav-desktop {
     display: inline-flex;
@@ -12,7 +11,7 @@
   }
   .nav-desktop li a {
     font-size: 1.6rem;
-    font-weight: 200;
+    font-weight: 300;
     text-decoration: none;
     color: #fff;
   }

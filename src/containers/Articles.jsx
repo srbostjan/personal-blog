@@ -33,11 +33,11 @@ const Articles = () => {
     <div className="main-articles">
       { loading ? <Loader /> :
         <>
-          <HeaderMobile name='Articles'/>
+          <HeaderMobile nav='articles' name='Articles'/>
           <div className='main-articles__content'>
             <div className='articles-header'>
               <input type="text" id='searchbar' value={busqueda} onChange={handleChange} placeholder='Buscar...' />
-              <NavDesktop />
+              <NavDesktop nav='articles'/>
             </div>
             <div className='articles-container'>
               {loading ?
