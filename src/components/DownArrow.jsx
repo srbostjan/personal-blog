@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
 const DownArrow = () => {
   const [scroll, setScroll] = useState(0);
@@ -18,7 +18,7 @@ const DownArrow = () => {
     }
   };
   return (
-    <a onClick={handleClick}><i className="fas fa-arrow-circle-right down-arrow"></i></a>
+    <a onClick={handleClick}><i className='fas fa-arrow-circle-right down-arrow'></i></a>
   );
 };
 

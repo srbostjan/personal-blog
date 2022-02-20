@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function HomeCard(props) {
-  let url = props.to;
-  url = url.startsWith('http');
+  let url = props.to.startsWith('http');
   let navigate = useHistory();
   let name = props.name;
   let icon = name.toLowerCase() === 'twitter' ? 'fab fa-twitter' : name.toLowerCase() === 'github' ? 'fab fa-github' : 'fas fa-arrow-circle-right';
@@ -22,4 +21,10 @@ function HomeCard(props) {
     </button>
   );
 }
+
+HomeCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired
+};
+
 export default HomeCard;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import showdown from 'showdown';
 import parse from 'html-react-parser';
-
+import propTypes from 'prop-types';
 import HeaderMobile from '../components/Header/HeaderMobile';
 import NavDesktop from '../components/Header/NavDesktop';
 import Loader from '../components/Loader';
@@ -12,7 +12,6 @@ const ViewArticle = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   let { id } = useParams();
   let converter = new showdown.Converter();
-
   if(props.article) {
     setArticle(props.article);
     setIsLoading(false);
@@ -25,7 +24,6 @@ const ViewArticle = (props) => {
         .then(() => setIsLoading(false));
     }, []);
   }
-
   return (
     <div className="main-article">
       {isLoading ? <Loader /> :
@@ -44,6 +42,17 @@ const ViewArticle = (props) => {
       }
     </div>
   );
+};
+
+ViewArticle.propTypes = {
+  article: propTypes.shape({
+    id: propTypes.number.isRequired,
+    title: propTypes.string.isRequired,
+    content: propTypes.string.isRequired,
+    resume: propTypes.string.isRequired,
+    portrait: propTypes.string.isRequired,
+    alt: propTypes.string.isRequired
+  })
 };
 
 export default ViewArticle;

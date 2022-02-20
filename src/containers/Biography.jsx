@@ -34,7 +34,7 @@ const Biography = () => {
             </section>
             <div className='resume'>
               <h2>Resume</h2>
-              <p className='text'>Fronted developer y UI:UX enthusiast enfocado en crear codigo limpio y con buenas practicas. especializado en: HTML, CSS, JavaScript, React, Redux, React Native, Vue, Sass, Webpack, Git/Github, UI Design Figma y Cypress.</p>
+              <p className='text'>Fronted developer y UI:UX enthusiast enfocado en crear código limpio y con buenas practicas. especializado en: HTML, CSS, JavaScript, React, Redux, React Native, Vue, Sass, Webpack, Git/Github, UI Design Figma y Cypress.</p>
             </div>
             <div className='stack'>
               <h2>Stack</h2>
