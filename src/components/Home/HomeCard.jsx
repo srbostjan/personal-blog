@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 function HomeCard({ to, name }) {
   const url = to.startsWith('http');
   const navigate = useHistory();
-  const title = name;
   const icon = () => {
     if (name.toLowerCase() === 'twitter') return 'fab fa-twitter';
     if (name.toLowerCase() === 'github') return 'fab fa-github';
@@ -22,7 +21,7 @@ function HomeCard({ to, name }) {
     <button type="button" onClick={handleClick} className="home-card">
       <div className="circle-animation" />
       <p>
-        { title }
+        { name }
         <i className={icon()} />
       </p>
     </button>

@@ -46,6 +46,7 @@
     "jsdom-global": "3.0.2",
     "mini-css-extract-plugin": "2.4.4",
     "prettier": "^2.5.1",
+    "react-test-renderer": "^16.14.0",
     "sass": "^1.49.7",
     "sass-loader": "12.3.0",
     "style-loader": "3.3.1",
@@ -70,6 +71,9 @@
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setupTest.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
   }
 }
