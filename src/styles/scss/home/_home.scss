@@ -59,7 +59,7 @@ html {
   cursor: pointer;
 }
 
-.home-left .content button a {
+.home-left .content button h3 {
   font-size: 1.2rem;
   background: $ppal-gradient;
   -webkit-background-clip: text;
@@ -105,7 +105,7 @@ html {
     width: 150px;
     height: 50px;
   }
-  .home-left .content button a {
+  .home-left .content button h3 {
     font-size: 1.4rem;
     font-weight: 300;
   }

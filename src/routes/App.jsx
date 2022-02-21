@@ -10,7 +10,7 @@ import ViewArticle from '../containers/ViewArticle';
 
 import '../styles/app.scss';
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <Layout>
@@ -24,6 +24,6 @@ const App = () => {
       </Layout>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
