@@ -19,7 +19,7 @@ function Biography() {
           <div className="my-info--presentation">
             <img src="https://i.ibb.co/bRx3FJm/people-guy-man-black-and-white-1.png" alt="" />
             <div className="biography--titles">
-              <h3>Sebas Rivera</h3>
+              <h3 className="biography--titles--title">Sebas Rivera</h3>
               <p>Frontend developer</p>
               <p>UI:UX Enthusiast</p>
             </div>

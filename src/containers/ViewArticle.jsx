@@ -45,24 +45,4 @@ function ViewArticle({ article }) {
   );
 }
 
-ViewArticle.propTypes = {
-  article: propTypes.shape({
-    id: propTypes.number.isRequired,
-    title: propTypes.string.isRequired,
-    content: propTypes.string.isRequired,
-    resume: propTypes.string.isRequired,
-    portrait: propTypes.string.isRequired,
-    alt: propTypes.string.isRequired,
-  }),
-};
-ViewArticle.defaultProps = {
-  article: {
-    id: 0,
-    title: '',
-    resume: '',
-    portrait: '',
-    alt: '',
-  },
-};
-
 export default ViewArticle;

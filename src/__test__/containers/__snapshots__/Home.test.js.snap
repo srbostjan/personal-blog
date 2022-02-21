@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Snapshot Home Snapshot 1`] = `
+<div
+  className="main-home"
+>
+  <section
+    className="home-left"
+  >
+    <div
+      className="content"
+    >
+      <h1>
+        Frontend Developer
+      </h1>
+      <p>
+        UI:UX enthusiasth
+      </p>
+      <p>
+        Clean code
+      </p>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        <h3>
+          Download CV
+        </h3>
+      </button>
+    </div>
+  </section>
+  <section
+    className="home-right"
+    id="home-right"
+  >
+    <button
+      className="home-card"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="circle-animation"
+      />
+      <p>
+        Biography
+        <i
+          className="fas fa-arrow-circle-right"
+        />
+      </p>
+    </button>
+    <button
+      className="home-card"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="circle-animation"
+      />
+      <p>
+        Articles
+        <i
+          className="fas fa-arrow-circle-right"
+        />
+      </p>
+    </button>
+    <button
+      className="home-card"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="circle-animation"
+      />
+      <p>
+        Twitter
+        <i
+          className="fab fa-twitter"
+        />
+      </p>
+    </button>
+    <button
+      className="home-card"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="circle-animation"
+      />
+      <p>
+        Github
+        <i
+          className="fab fa-github"
+        />
+      </p>
+    </button>
+  </section>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fas fa-arrow-circle-right down-arrow"
+    />
+  </button>
+</div>
+`;

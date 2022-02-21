@@ -1,5 +1,4 @@
 import React from 'react';
-
 import HomeCard from '../components/Home/HomeCard';
 import DownArrow from '../components/DownArrow';
 
