@@ -1,14 +1,14 @@
 # Sebastian Rivera's Personal Blog
-A complete web application for my personal blog.
+A complete web application created with react to present myself and share articles about Tech Industry and web development.
 
-[srbostjan.me](https://srbostjan.me)
+### Miralo aquí: [srbostjan.me](https://srbostjan.me)
 
 <img src="https://i.ibb.co/Tt2Z18K/blog-capture.png" />
 
 ## How to use this repository
 ### Instalar todas las dependencias
 	npm install
-### Correr en localhost
+### Ejecutar en localhost
 	npm run dev
 
 ## Front Technologies
