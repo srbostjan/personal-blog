@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import articleMock from '../../__mocks__/articleMock';
 import ViewArticle from '../../containers/ViewArticle';

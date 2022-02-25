@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import articleMock from '../../__mocks__/articleMock';
 import ArticleCard from '../../components/Articles/ArticleCard';
 

@@ -29,11 +29,11 @@ function ViewArticle({ article }) {
       {isLoading ? <Loader />
         : (
           <>
-            <HeaderMobile name="Article" />
+            <HeaderMobile name="Article" nav="articles" />
             <section className="article__content">
               <div className="article-header">
                 <h1 className="article--title">{newArticle.title}</h1>
-                <NavDesktop />
+                <NavDesktop nav="articles" />
               </div>
               <div className="article__content--content">
                 {parse(converter.makeHtml(newArticle.content))}
@@ -44,5 +44,12 @@ function ViewArticle({ article }) {
     </div>
   );
 }
+
+ViewArticle.propTypes = {
+  article: propTypes.shape({
+    title: propTypes.string,
+    content: propTypes.string,
+  }).isRequired,
+};
 
 export default ViewArticle;
