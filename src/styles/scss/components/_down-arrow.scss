@@ -11,3 +11,8 @@
 .down {
   transform: rotate(90deg) translateY(50%);
 }
+@media (min-width: 1024px) {
+  .down-arrow-button {
+    display: none;
+  }
+}

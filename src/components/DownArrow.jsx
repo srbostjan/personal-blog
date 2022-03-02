@@ -19,7 +19,7 @@ function DownArrow() {
     }
   };
   return (
-    <button type="button" onClick={handleClick}><i className="fas fa-arrow-circle-right down-arrow" /></button>
+    <button type="button" className="down-arrow-button" onClick={handleClick}><i className="fas fa-arrow-circle-right down-arrow" /></button>
   );
 }
 
