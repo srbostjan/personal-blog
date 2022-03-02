@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-import Layout from '../containers/Layout';
-import Home from '../containers/Home';
-import Biography from '../containers/Biography';
-import Articles from '../containers/Articles';
-import NotFound from '../containers/NotFound';
-import ViewArticle from '../containers/ViewArticle';
-
-import '../styles/app.scss';
+import Layout from '@containers/Layout';
+import Home from '@containers/Home';
+import Biography from '@containers/Biography';
+import Articles from '@containers/Articles';
+import NotFound from '@containers/NotFound';
+import ViewArticle from '@containers/ViewArticle';
+import '@styles/app.scss';
 
 function App() {
   return (

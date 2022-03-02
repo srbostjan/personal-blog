@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import HeaderMobile from '../components/Header/HeaderMobile';
-import NavDesktop from '../components/Header/NavDesktop';
-import DownArrow from '../components/DownArrow';
+import HeaderMobile from '@components/Header/HeaderMobile';
+import NavDesktop from '@components/Header/NavDesktop';
+import DownArrow from '@components/DownArrow';
 
 function Biography() {
   useEffect(() => {

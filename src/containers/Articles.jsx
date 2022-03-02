@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import NavDesktop from '../components/Header/NavDesktop';
-import HeaderMobile from '../components/Header/HeaderMobile';
-import ArticleCard from '../components/Articles/ArticleCard';
-import Loader from '../components/Loader';
+import NavDesktop from '@components/Header/NavDesktop';
+import HeaderMobile from '@components/Header/HeaderMobile';
+import ArticleCard from '@components/Articles/ArticleCard';
+import Loader from '@components/Loader';
 
 function Articles() {
   const [articles, setArticles] = useState([]);
@@ -11,7 +11,8 @@ function Articles() {
   const [filtered, setFilter] = useState([]);
 
   const filterArticles = (sentence) => {
-    const filter = articles.filter((article) => article.title.toLowerCase().includes(sentence.toLowerCase()));
+    const includes = (article) => article.title.toLowerCase().includes(sentence.toLowerCase());
+    const filter = articles.filter((article) => includes(article));
     setFilter(filter);
   };
   const handleChange = (e) => {

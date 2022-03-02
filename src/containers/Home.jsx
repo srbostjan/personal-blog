@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeCard from '../components/Home/HomeCard';
-import DownArrow from '../components/DownArrow';
+import HomeCard from '@components/Home/HomeCard';
+import DownArrow from '@components/DownArrow';
 
 function Home() {
   const download = () => {

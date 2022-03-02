@@ -7,13 +7,19 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@containers': path.resolve(__dirname, 'src/containers'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@routes': path.resolve(__dirname, 'src/routes'),
+    },
   },
   module: {
     rules: [
@@ -22,33 +28,33 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        }
+        },
       },
       {
         test: /\.html$/,
         use: [
           {
             loader: 'html-loader',
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.(css|scss)$/,
         use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader"
-        ]
-      }
-    ]
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-    })
+    }),
   ],
 };
