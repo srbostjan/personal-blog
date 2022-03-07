@@ -34,11 +34,22 @@ function Biography() {
             </section>
             <div className="resume">
               <h2>Resume</h2>
-              <p className="text">Fronted developer y UI:UX enthusiast enfocado en crear código limpio y con buenas practicas. especializado en: HTML, CSS, JavaScript, React, Redux, React Native, Vue, Sass, Webpack, Git/Github, UI Design Figma y Cypress.</p>
+              <p className="text">Fronted developer and UI:UX enthusiast focused on creating clean code with good practices. specialized in: HTML, CSS, JavaScript, React, Redux, React Native, Vue, Sass, Webpack, Git/Github, UI Design Figma and Cypress.</p>
             </div>
             <div className="stack">
               <h2>Stack</h2>
-              <p className="text">Fronted developer y UI:UX enthusiast enfocado en crear codigo limpio y con buenas practicas. especializado en: HTML, CSS, JavaScript, React, Redux, React Native, Vue, Sass, Webpack, Git/Github, UI Design Figma y Cypress.</p>
+              <ul className="stack-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Sass</li>
+                <li>React Native</li>
+                <li>Cypress</li>
+                <li>Git</li>
+                <li>Redux</li>
+                <li>Webpack</li>
+              </ul>
             </div>
           </section>
         </section>

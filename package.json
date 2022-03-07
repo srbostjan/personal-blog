@@ -58,7 +58,6 @@
   },
   "dependencies": {
     "axios": "0.25.0",
-    "cheerio": "1.0.0-rc.10",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
     "html-react-parser": "1.4.8",

@@ -3,9 +3,7 @@ import HomeCard from '@components/Home/HomeCard';
 import DownArrow from '@components/DownArrow';
 
 function Home() {
-  const download = () => {
-    window.open('https://drive.google.com/uc?id=1vCBRlqsu-T7dI5EqRxlRgk968JxSiNn6&export=download', '_blank');
-  };
+  const download = 'https://drive.google.com/uc?id=1kV_x1dJ1R6sVWuXdtWUhK2iTg-DAgV5f&export=download';
   return (
     <div className="main-home">
       <section className="home-left">
@@ -13,7 +11,7 @@ function Home() {
           <h1>Frontend Developer</h1>
           <p>UI:UX enthusiasth</p>
           <p>Clean code</p>
-          <button type="button" onClick={download}><h3>Download CV</h3></button>
+          <button type="button"><a className="cv-download-link" href={download} download="Frontend_SebastianRiveraOcampo_CV">Download CV</a></button>
         </div>
       </section>
       <section className="home-right" id="home-right">

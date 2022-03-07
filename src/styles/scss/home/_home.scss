@@ -59,9 +59,10 @@ html {
   cursor: pointer;
 }
 
-.home-left .content button h3 {
+.home-left .cv-download-link {
   font-size: 1.2rem;
   background: $ppal-gradient;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white;

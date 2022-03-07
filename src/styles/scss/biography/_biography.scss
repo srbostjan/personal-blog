@@ -75,6 +75,22 @@
 .stack {
   animation: biography-content-entry .33s ease-out;
 }
+.resume h2, .stack h2 {
+  margin-bottom: 12px;
+}
+.stack-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 50px;
+  list-style: none;
+}
+.stack-list li {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+}
 .resume {
   animation: biography-content-entry2 .66s ease-out;
 }
@@ -112,5 +128,10 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (min-width: 768px) {
+  .stack-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

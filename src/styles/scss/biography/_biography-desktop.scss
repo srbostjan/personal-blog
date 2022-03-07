@@ -48,3 +48,10 @@
 .resume, .stack {
   max-width: 400px;
 }
+.stack-list {
+  list-style-type: square;
+}
+.stack-list li {
+  text-align: start;
+  margin-left: 16px;
+}
