@@ -16,7 +16,7 @@ function ViewArticle({ article }) {
   if (article) {
     setNewArticle(article);
     setIsLoading(false);
-    ReactGA.pageview(`/articles/${newArticle.id}`);
+    ReactGA.pageview(`/articles/${id}`);
   } else {
     const url = `https://afternoon-shore-25033.herokuapp.com/api/v1/articles/${id}`;
     useEffect(() => {
@@ -24,7 +24,7 @@ function ViewArticle({ article }) {
         .then((res) => res.json())
         .then((data) => setNewArticle(data))
         .then(() => setIsLoading(false));
-      ReactGA.pageview(`/articles/${newArticle.id}`);
+      ReactGA.pageview(`/articles/${id}`);
     }, []);
   }
   return (
