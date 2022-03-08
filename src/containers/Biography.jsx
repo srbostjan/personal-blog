@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import DownArrow from '@components/DownArrow';
 
 function Biography() {
   window.document.title = 'Biography';
+  useEffect(() => {
+    ReactGA.pageview('/homepage');
+  });
   return (
     <div className="main-biography">
       <HeaderMobile nav="biography" name="Biography" />

@@ -27,6 +27,7 @@ function ViewArticle({ article }) {
         .then((res) => res.json())
         .then((data) => setNewArticle(data))
         .then(() => setIsLoading(false));
+      ReactGA.pageview('/homepage');
     }, []);
   }
   return (

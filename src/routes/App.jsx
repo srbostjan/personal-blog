@@ -11,7 +11,7 @@ import '@styles/app.scss';
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize('G-EQN0TRE7W4');
+    ReactGA.initialize('G-X8N1KDZWR2');
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
   return (

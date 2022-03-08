@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import NavDesktop from '@components/Header/NavDesktop';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import ArticleCard from '@components/Articles/ArticleCard';
@@ -29,6 +30,7 @@ function Articles() {
         setFilter(data);
       })
       .then(() => setLoading(false));
+    ReactGA.pageview('/articles');
   }, []);
   function renderArticles() {
     if (loading) {
