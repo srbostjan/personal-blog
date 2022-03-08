@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import DownArrow from '@components/DownArrow';
@@ -6,6 +7,7 @@ import DownArrow from '@components/DownArrow';
 function Biography() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.pageview('/biography');
   });
   return (
     <div className="main-biography">

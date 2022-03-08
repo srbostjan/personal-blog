@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import showdown from 'showdown';
 import parse from 'html-react-parser';
 import propTypes from 'prop-types';
+import ReactGA from 'react-ga';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import Loader from '@components/Loader';
@@ -15,6 +16,7 @@ function ViewArticle({ article }) {
   if (article) {
     setNewArticle(article);
     setIsLoading(false);
+    ReactGA.pageview(`/articles/${newArticle.id}`);
   } else {
     const url = `https://afternoon-shore-25033.herokuapp.com/api/v1/articles/${id}`;
     useEffect(() => {
@@ -22,6 +24,7 @@ function ViewArticle({ article }) {
         .then((res) => res.json())
         .then((data) => setNewArticle(data))
         .then(() => setIsLoading(false));
+      ReactGA.pageview(`/articles/${newArticle.id}`);
     }, []);
   }
   return (

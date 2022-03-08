@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Layout from '@containers/Layout';
 import Home from '@containers/Home';
 import Biography from '@containers/Biography';
@@ -9,6 +10,10 @@ import ViewArticle from '@containers/ViewArticle';
 import '@styles/app.scss';
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-EQN0TRE7W4');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <BrowserRouter>
       <Layout>

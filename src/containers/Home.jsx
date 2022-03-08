@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import HomeCard from '@components/Home/HomeCard';
 import DownArrow from '@components/DownArrow';
 
 function Home() {
   const download = 'https://drive.google.com/uc?id=1kV_x1dJ1R6sVWuXdtWUhK2iTg-DAgV5f&export=download';
+  useEffect(() => {
+    ReactGA.pageview('/homepage');
+  });
   return (
     <div className="main-home">
       <section className="home-left">
