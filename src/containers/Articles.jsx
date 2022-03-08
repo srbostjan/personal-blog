@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactGA from 'react-ga';
 import NavDesktop from '@components/Header/NavDesktop';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import ArticleCard from '@components/Articles/ArticleCard';
@@ -11,6 +10,8 @@ function Articles() {
   const [busqueda, setBusqueda] = useState('');
   const [filtered, setFilter] = useState([]);
 
+  window.document.title = 'Articles';
+
   const filterArticles = (sentence) => {
     const includes = (article) => article.title.toLowerCase().includes(sentence.toLowerCase());
     const filter = articles.filter((article) => includes(article));
@@ -21,7 +22,6 @@ function Articles() {
     filterArticles(e.target.value);
   };
   useEffect(() => {
-    ReactGA.pageview('/articles');
     fetch('https://afternoon-shore-25033.herokuapp.com/api/v1/articles')
       .then((res) => res.json())
       .then((data) => {

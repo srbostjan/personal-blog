@@ -12,6 +12,9 @@ function ViewArticle({ article }) {
   const [newArticle, setNewArticle] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
+
+  if (newArticle) window.document.title = newArticle.title || 'Loading...';
+
   const converter = new showdown.Converter();
   if (article) {
     setNewArticle(article);
@@ -24,7 +27,6 @@ function ViewArticle({ article }) {
         .then((res) => res.json())
         .then((data) => setNewArticle(data))
         .then(() => setIsLoading(false));
-      ReactGA.pageview(`/articles/${id}`);
     }, []);
   }
   return (

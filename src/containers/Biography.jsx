@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React from 'react';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import DownArrow from '@components/DownArrow';
 
 function Biography() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    ReactGA.pageview('/biography');
-  });
+  window.document.title = 'Biography';
   return (
     <div className="main-biography">
       <HeaderMobile nav="biography" name="Biography" />
