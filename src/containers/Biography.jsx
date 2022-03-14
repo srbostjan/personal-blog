@@ -7,7 +7,7 @@ import DownArrow from '@components/DownArrow';
 function Biography() {
   window.document.title = 'Biography';
   useEffect(() => {
-    ReactGA.pageview('/homepage');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   });
   return (
     <div className="main-biography">

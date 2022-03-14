@@ -11,9 +11,8 @@ import '@styles/app.scss';
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize('G-X8N1KDZWR2');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  });
+    ReactGA.initialize('G-8X1VV6KVB1');
+  }, []);
   return (
     <BrowserRouter>
       <Layout>

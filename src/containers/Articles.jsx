@@ -30,7 +30,7 @@ function Articles() {
         setFilter(data);
       })
       .then(() => setLoading(false));
-    ReactGA.pageview('/articles');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   function renderArticles() {
     if (loading) {
