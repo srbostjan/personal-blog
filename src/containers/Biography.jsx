@@ -1,16 +1,20 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import DownArrow from '@components/DownArrow';
 
 function Biography() {
-  window.document.title = 'Biography';
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
   return (
     <div className="main-biography">
+      <Helmet>
+        <title>Biography</title>
+        <meta name="description" content="Sebastian Rivera Ocampo's biography" />
+      </Helmet>
       <HeaderMobile nav="biography" name="Biography" />
       <div className="main-biography__content">
         <div className="biography-header">

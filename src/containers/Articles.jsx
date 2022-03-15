@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 import NavDesktop from '@components/Header/NavDesktop';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import ArticleCard from '@components/Articles/ArticleCard';
@@ -10,8 +11,6 @@ function Articles() {
   const [loading, setLoading] = useState(true);
   const [busqueda, setBusqueda] = useState('');
   const [filtered, setFilter] = useState([]);
-
-  window.document.title = 'Articles';
 
   const filterArticles = (sentence) => {
     const includes = (article) => article.title.toLowerCase().includes(sentence.toLowerCase());
@@ -43,6 +42,10 @@ function Articles() {
       { loading ? <Loader />
         : (
           <>
+            <Helmet>
+              <title>Articles</title>
+              <meta name="description" content="Here you can find web development articles" />
+            </Helmet>
             <HeaderMobile nav="articles" name="Articles" />
             <div className="main-articles__content">
               <div className="articles-header">

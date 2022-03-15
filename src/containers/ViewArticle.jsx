@@ -4,6 +4,7 @@ import showdown from 'showdown';
 import parse from 'html-react-parser';
 import propTypes from 'prop-types';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import Loader from '@components/Loader';
@@ -12,8 +13,6 @@ function ViewArticle({ article }) {
   const [newArticle, setNewArticle] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-
-  if (newArticle) window.document.title = newArticle.title || 'Loading...';
 
   const converter = new showdown.Converter();
   if (article) {
@@ -35,6 +34,10 @@ function ViewArticle({ article }) {
       {isLoading ? <Loader />
         : (
           <>
+            <Helmet>
+              <title>{newArticle.title || 'Loading...'}</title>
+              <meta name="description" content={newArticle.resume || 'Article resume'} />
+            </Helmet>
             <HeaderMobile name="Article" nav="articles" />
             <section className="article__content">
               <div className="article-header">

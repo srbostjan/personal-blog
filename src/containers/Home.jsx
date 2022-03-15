@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 import HomeCard from '@components/Home/HomeCard';
 import DownArrow from '@components/DownArrow';
 
 function Home() {
-  window.document.title = 'Sebastian Rivera Ocampo';
   const download = 'https://drive.google.com/uc?id=1kV_x1dJ1R6sVWuXdtWUhK2iTg-DAgV5f&export=download';
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
@@ -18,6 +18,10 @@ function Home() {
   };
   return (
     <div className="main-home">
+      <Helmet>
+        <title>Sebastian Rivera Ocampo</title>
+        <meta name="description" content="Sebastian Rivera Ocampo's personal blog homepage" />
+      </Helmet>
       <section className="home-left">
         <div className="content">
           <h1>Frontend Developer</h1>
