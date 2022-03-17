@@ -2,6 +2,7 @@
 
 exports[`DownArrow Snapshot DownArrow Snapshot 1`] = `
 <button
+  className="down-arrow-button"
   onClick={[Function]}
   type="button"
 >

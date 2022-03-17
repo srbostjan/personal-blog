@@ -10,5 +10,11 @@ exports[`NotFound Snapshot NotFound Snapshot 1`] = `
   <p>
     Page not found
   </p>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Go to homepage
+  </a>
 </div>
 `;

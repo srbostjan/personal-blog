@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
-import Layout from '@containers/Layout';
 import Home from '@containers/Home';
 import Biography from '@containers/Biography';
 import Articles from '@containers/Articles';
@@ -15,15 +14,13 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/articles" component={Articles} />
-          <Route exact path="/articles/:id" component={ViewArticle} />
-          <Route exact path="/biography" component={Biography} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/articles" component={Articles} />
+        <Route exact path="/articles/:id" component={ViewArticle} />
+        <Route exact path="/biography" component={Biography} />
+        <Route component={NotFound} />
+      </Switch>
     </BrowserRouter>
   );
 }

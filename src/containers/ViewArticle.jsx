@@ -9,26 +9,19 @@ import HeaderMobile from '@components/Header/HeaderMobile';
 import NavDesktop from '@components/Header/NavDesktop';
 import Loader from '@components/Loader';
 
-function ViewArticle({ article }) {
+function ViewArticle() {
   const [newArticle, setNewArticle] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-
   const converter = new showdown.Converter();
-  if (article) {
-    setNewArticle(article);
-    setIsLoading(false);
-    ReactGA.pageview(`/articles/${id}`);
-  } else {
-    const url = `https://afternoon-shore-25033.herokuapp.com/api/v1/articles/${id}`;
-    useEffect(() => {
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => setNewArticle(data))
-        .then(() => setIsLoading(false));
-      ReactGA.pageview('/homepage');
-    }, []);
-  }
+  const url = `https://afternoon-shore-25033.herokuapp.com/api/v1/articles/${id}`;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setNewArticle(data))
+      .then(() => setIsLoading(false));
+    ReactGA.pageview('/homepage');
+  }, []);
   return (
     <div className="main-article">
       {isLoading ? <Loader />

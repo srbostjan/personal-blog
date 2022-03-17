@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { create } from 'react-test-renderer';
 import NotFound from '../../containers/NotFound';
 
@@ -11,7 +12,7 @@ describe('<NotFound />', () => {
 });
 describe('NotFound Snapshot', () => {
   test('NotFound Snapshot', () => {
-    const component = create(<NotFound />);
+    const component = create(<BrowserRouter><NotFound /></BrowserRouter>);
     expect(component.toJSON()).toMatchSnapshot();
   });
-})
+});

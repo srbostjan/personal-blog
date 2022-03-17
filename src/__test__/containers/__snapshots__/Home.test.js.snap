@@ -20,12 +20,12 @@ exports[`Home Snapshot Home Snapshot 1`] = `
         Clean code
       </p>
       <button
+        className="cv-download-link"
+        download="Frontend_SebastianRiveraOcampo_CV"
         onClick={[Function]}
         type="button"
       >
-        <h3>
-          Download CV
-        </h3>
+        Download CV
       </button>
     </div>
   </section>
@@ -95,6 +95,7 @@ exports[`Home Snapshot Home Snapshot 1`] = `
     </button>
   </section>
   <button
+    className="down-arrow-button"
     onClick={[Function]}
     type="button"
   >
