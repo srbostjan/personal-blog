@@ -20,7 +20,7 @@
     "blog",
     "personal-blog"
   ],
-  "homepage": "https://srbostjan.github.io/personal-blog",
+  "homepage": "https://srbostjan.me",
   "author": "srbostjan",
   "license": "MIT",
   "devDependencies": {
@@ -56,15 +56,15 @@
     "webpack-dev-server": "4.7.4"
   },
   "dependencies": {
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "html-react-parser": "^1.4.8",
-    "markdown-to-jsx": "^7.1.7",
-    "prop-types": "^15.8.1",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.6",
+    "html-react-parser": "1.4.8",
+    "markdown-to-jsx": "7.1.7",
+    "prop-types": "15.8.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-ga": "^3.3.0",
-    "react-helmet": "^6.1.0",
+    "react-ga": "3.3.0",
+    "react-helmet": "6.1.0",
     "react-router-dom": "5.3.0",
     "showdown": "2.0.0-alpha"
   },
