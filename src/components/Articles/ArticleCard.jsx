@@ -25,6 +25,7 @@ ArticleCard.propTypes = {
     alt: PropTypes.string.isRequired,
   }),
 };
+
 ArticleCard.defaultProps = {
   article: {
     id: 0,

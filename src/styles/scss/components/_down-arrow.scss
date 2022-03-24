@@ -1,16 +1,10 @@
 .down-arrow {
   position: absolute;
   font-size: 3.2rem;
-  transform: rotate(90deg) translateY(50%);
   color: $subdued-white-text;
   transition: all 0.3s;
 }
-.up {
-  transform: rotate(270deg) translateY(-50%);
-}
-.down {
-  transform: rotate(90deg) translateY(50%);
-}
+
 @media (min-width: 1024px) {
   .down-arrow-button {
     display: none;

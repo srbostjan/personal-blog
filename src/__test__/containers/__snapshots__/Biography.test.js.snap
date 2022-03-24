@@ -149,7 +149,7 @@ exports[`Biography Snapshot Biography Snapshot 1`] = `
         className="my-info--presentation"
       >
         <img
-          alt=""
+          alt="man portrait"
           src="https://i.ibb.co/bRx3FJm/people-guy-man-black-and-white-1.png"
         />
         <div

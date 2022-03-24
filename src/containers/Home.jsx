@@ -5,9 +5,9 @@ import HomeCard from '@components/Home/HomeCard';
 import DownArrow from '@components/DownArrow';
 
 function Home() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  const twitter = 'https://twitter.com/srbostjan';
+  const github = 'https://github.com/srbostjan';
+
   const handleClick = () => {
     const downloadurl = 'https://drive.google.com/uc?id=1kV_x1dJ1R6sVWuXdtWUhK2iTg-DAgV5f&export=download';
     ReactGA.event({
@@ -16,6 +16,11 @@ function Home() {
     });
     window.open(downloadurl, '_blank');
   };
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <div className="main-home">
       <Helmet>
@@ -35,8 +40,8 @@ function Home() {
       <section className="home-right" id="home-right">
         <HomeCard name="Biography" to="biography" />
         <HomeCard name="Articles" to="articles" />
-        <HomeCard name="Twitter" to="https://twitter.com/srbostjan" />
-        <HomeCard name="Github" to="https://github.com/srbostjan" />
+        <HomeCard name="Twitter" to={twitter} />
+        <HomeCard name="Github" to={github} />
       </section>
       <DownArrow />
     </div>

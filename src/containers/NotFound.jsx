@@ -7,6 +7,7 @@ function NotFound() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
+
   return (
     <div className="not-found">
       <Helmet>

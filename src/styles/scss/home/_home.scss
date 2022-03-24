@@ -12,6 +12,7 @@ html {
 .main-home .down-arrow {
   bottom: 20px;
   left: 50%;
+  transform: translateX(-50%);
 }
 .home-left {
   display: flex;

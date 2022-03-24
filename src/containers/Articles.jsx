@@ -11,18 +11,28 @@ function Articles() {
   const [loading, setLoading] = useState(true);
   const [busqueda, setBusqueda] = useState('');
   const [filtered, setFilter] = useState([]);
+  const URL = 'https://afternoon-shore-25033.herokuapp.com/api/v1/articles';
 
   const filterArticles = (sentence) => {
     const includes = (article) => article.title.toLowerCase().includes(sentence.toLowerCase());
     const filter = articles.filter((article) => includes(article));
     setFilter(filter);
   };
+
   const handleChange = (e) => {
     setBusqueda(e.target.value);
     filterArticles(e.target.value);
   };
+
+  function renderArticles() {
+    if (loading) {
+      return <Loader />;
+    }
+    return filtered.map((article) => <ArticleCard key={article.id} article={article} />);
+  }
+
   useEffect(() => {
-    fetch('https://afternoon-shore-25033.herokuapp.com/api/v1/articles')
+    fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
@@ -31,12 +41,7 @@ function Articles() {
       .then(() => setLoading(false));
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  function renderArticles() {
-    if (loading) {
-      return <Loader />;
-    }
-    return filtered.map((article) => <ArticleCard key={article.id} article={article} />);
-  }
+
   return (
     <div className="main-articles">
       { loading ? <Loader />

@@ -10,15 +10,17 @@ function HomeCard({ to, name }) {
     if (name.toLowerCase() === 'github') return 'fab fa-github';
     return 'fas fa-arrow-circle-right';
   };
-  const handleClick = () => {
+
+  const goTo = () => {
     if (url) {
       window.open(to, '_blank');
     } else {
       navigate.push(`/${to}`);
     }
   };
+
   return (
-    <button type="button" onClick={handleClick} className="home-card">
+    <button type="button" onClick={goTo} className="home-card">
       <div className="circle-animation" />
       <p>
         { name }

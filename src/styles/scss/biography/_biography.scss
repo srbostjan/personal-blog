@@ -10,6 +10,7 @@
 .main-biography .down-arrow {
   bottom: 20px;
   left: 50%;
+  transform: translateX(-50%);
 }
 .my-info {
   position: relative;
@@ -34,7 +35,7 @@
   display: none;
   animation: biography-content-entry3 1s ease-out;
 }
-.biography--titles h3 {
+.biography--titles h1 {
   position: relative;
   margin-bottom: 5px;
   font-size: 4.4rem;
@@ -46,7 +47,7 @@
   -webkit-text-fill-color: transparent;
   color: white;
 }
-.biography--titles h3::after {
+.biography--titles h1::after {
   content: ' ';
   position: absolute;
   bottom: 0;

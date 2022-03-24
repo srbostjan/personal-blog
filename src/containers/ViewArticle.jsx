@@ -15,6 +15,7 @@ function ViewArticle() {
   const { id } = useParams();
   const converter = new showdown.Converter();
   const url = `https://afternoon-shore-25033.herokuapp.com/api/v1/articles/${id}`;
+
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -22,6 +23,7 @@ function ViewArticle() {
       .then(() => setIsLoading(false));
     ReactGA.pageview('/homepage');
   }, []);
+
   return (
     <div className="main-article">
       {isLoading ? <Loader />

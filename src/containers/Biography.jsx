@@ -6,9 +6,13 @@ import NavDesktop from '@components/Header/NavDesktop';
 import DownArrow from '@components/DownArrow';
 
 function Biography() {
+  const manImage = 'https://i.ibb.co/bRx3FJm/people-guy-man-black-and-white-1.png';
+
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
+    window.scrollTo(0, -window.innerHeight);
   });
+
   return (
     <div className="main-biography">
       <Helmet>
@@ -23,9 +27,9 @@ function Biography() {
         </div>
         <section className="my-info">
           <div className="my-info--presentation">
-            <img src="https://i.ibb.co/bRx3FJm/people-guy-man-black-and-white-1.png" alt="" />
+            <img src={manImage} alt="man portrait" />
             <div className="biography--titles">
-              <h3 className="biography--titles--title">Sebas Rivera</h3>
+              <h1 className="biography--titles--title">Sebas Rivera</h1>
               <p>Frontend developer</p>
               <p>UI:UX Enthusiast</p>
             </div>
@@ -33,7 +37,7 @@ function Biography() {
           <section className="my-info__content">
             <section className="my-info--presentation">
               <div className="biography--titles">
-                <h3>Sebas Rivera</h3>
+                <h1>Sebas Rivera</h1>
                 <p className="text">Frontend developer</p>
                 <p className="text">UI:UX Enthusiast</p>
               </div>
