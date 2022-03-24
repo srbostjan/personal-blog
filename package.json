@@ -1,6 +1,6 @@
 {
   "name": "sebastian-rivera-personal-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A blog for personal branding and Frontend developer articles. Developed with React.js",
   "main": "src/index.js",
   "scripts": {
@@ -67,19 +67,5 @@
     "react-helmet": "6.1.0",
     "react-router-dom": "5.3.0",
     "showdown": "2.0.0-alpha"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/__test__/setupTest.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js",
-      "^@root(.*)$": "<rootDir>/src$1",
-      "^@components(.*)$": "<rootDir>/src/components$1",
-      "^@containers(.*)$": "<rootDir>/src/containers$1",
-      "^@styles(.*)$": "<rootDir>/src/styles$1",
-      "^@routes(.*)$": "<rootDir>/src/routes$1"
-    }
   }
 }
